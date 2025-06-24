@@ -234,3 +234,32 @@ For support and questions:
 ---
 
 **Made with ❤️ for job seekers worldwide** 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# JD-Aware Resume Enhancer - System Architecture
+
+## Data Processing Pipeline
+
+The system follows a sophisticated data flow architecture for resume optimization:
+
+```mermaid
+graph TD
+    A[Raw Document Upload] --> B[Content Normalization]
+    B --> C[Semantic Annotation]
+    C --> D[Vector Space Projection]
+    D --> E[Gap Analysis]
+    E --> F[Transformation Suggestions]
+    F --> G[Versioned Output Generation]
