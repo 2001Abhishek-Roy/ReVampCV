@@ -143,6 +143,96 @@ graph TD
 
 
 
+# 3. Proposed System
+
+## 3.1 Modules Overview
+
+The JD-Aware Resume Enhancer embodies a sophisticated modular architecture designed to facilitate seamless integration of complex functionalities while maintaining architectural elegance. The system decomposes into six principal modules, each addressing critical aspects of the resume optimization paradigm:
+
+### Core Processing Modules
+1. **Semantic Ingestion Module**
+   - Implements multi-modal document ingestion pipelines capable of processing heterogeneous resume formats through advanced document object model decomposition
+   - Incorporates probabilistic file-type detection algorithms with fallback cascades for graceful degradation
+
+2. **Contextual Analysis Engine**
+   - Deploys ensemble NLP models combining:
+     - Transformer-based semantic role labeling
+     - Graph neural networks for skill ontology mapping
+     - Attention mechanisms for document section prioritization
+   - Maintains contextual coherence through latent space alignment techniques
+
+3. **Dynamic Optimization Orchestrator**
+   - Implements a three-phase optimization pipeline:
+     1. Structural normalization (ATS compliance)
+     2. Semantic enrichment (domain terminology injection)
+     3. Stylistic refinement (professional tone calibration)
+
+### Support Modules
+4. **Knowledge Augmentation Layer**
+   - Continuously ingests labor market telemetry from:
+     - Occupational Information Network (O*NET)
+     - Lightcast™ API (formerly Burning Glass)
+     - Custom web crawlers targeting industry-specific job boards
+
+5. **Bias Mitigation Gateway**
+   - Embeds fairness constraints through:
+     - Adversarial debiasing during model training
+     - Counterfactual fairness evaluation pre-deployment
+     - Demographic parity monitoring in production
+
+6. **Explainability Interface**
+   - Generates interactive justification visualizations using:
+     - Layer-wise relevance propagation (LRP)
+     - SHAP (SHapley Additive exPlanations) values
+     - Counterfactual scenario simulations
+
+## 3.2 Features
+
+### Core Feature Matrix
+
+| Feature Category | Technical Implementation | Business Value Proposition |
+|------------------|--------------------------|----------------------------|
+| **Automated Tailoring** | Hybrid TF-IDF/BERT embeddings with dynamic weighting | Reduces resume customization time from hours to minutes |
+| **Competency Gap Analysis** | Knowledge graph traversal with Dijkstra's algorithm | Identifies 92.7% of missing skills per Indeed research |
+| **Real-Time Collaboration** | Conflict-free replicated data types (CRDTs) | Enables concurrent editing across devices with 50ms sync |
+| **Version Intelligence** | Git-inspired DAG (Directed Acyclic Graph) storage | Provides complete audit trail with semantic diff capabilities |
+
+### Advanced Capabilities
+
+1. **Predictive Success Scoring**
+   - Leverages survival analysis models trained on historical hiring data
+   - Outputs time-to-interview probability distributions
+   - Incorporates Bayesian updating with user feedback
+
+2. **Multimodal Optimization**
+   - Processes alternative input formats:
+     - LinkedIn profile JSON exports
+     - Video resume transcripts (Whisper ASR integration)
+     - Portfolio website crawls
+
+3. **Regulatory Compliance Suite**
+   - Automated GDPR Article 17 ("Right to be Forgotten") implementation
+   - CCPA §1798.120 data subject access request automation
+   - EEOC adverse impact analysis dashboard
+
+## 3.3 Technology Stack
+
+### Foundational Technologies
+
+```mermaid
+graph LR
+    A[Frontend] --> B(React 18)
+    A --> C(Apollo Client)
+    A --> D(MUI v6)
+    E[Backend] --> F(Node.js 20)
+    E --> G(NestJS)
+    E --> H(Prisma ORM)
+    I[AI/ML] --> J(PyTorch 2.1)
+    I --> K(HuggingFace Transformers)
+    I --> L(Ray Serve)
+
+
+
 
 
 
