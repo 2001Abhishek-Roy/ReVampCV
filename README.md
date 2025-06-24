@@ -127,8 +127,6 @@ This project confronts these challenges through a multi-dimensional computationa
 
 ## 2.4 System Architecture
 
-### Macro-Architecture Overview
-
 ```mermaid
 graph TD
     A[Client Layer] -->|HTTPS/2| B[API Gateway]
@@ -139,10 +137,6 @@ graph TD
     F --> G[Version Control]
     G --> H[Cloud Storage]
     H --> I[Analytics Pipeline]
-
-**Made with ❤️ for job seekers worldwide** 
-
-
 
 
 
