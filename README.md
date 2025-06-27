@@ -179,14 +179,17 @@ The JD-Aware Resume Enhancer embodies a sophisticated modular architecture desig
 ### Architecture Diagram
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffd8d8', 'edgeLabelBackground':'#fff'}}}%%
 graph TD
-    A[Client Layer] --> B[API Gateway]
-    B --> C[Auth Service]
-    B --> D[Document Processing]
-    D --> E[NLP Service]
-    E --> F[Recommendation Engine]
-    F --> G[Cloud Storage]
-
+    A[Client Layer\nReact.js\nMaterial UI] -->|HTTPS/2| B[API Gateway\nKong]
+    B --> C[Auth Service\nJWT/OAuth2.0]
+    B --> D[Document Processing\nApache Tika]
+    D --> E[NLP Service\nPython/Transformers]
+    E --> F[Recommendation Engine\nNode.js]
+    F --> G[Cloud Storage\nAWS S3]
+    G --> H[Analytics\nElasticsearch]
+    C --> H
+    D --> H
 
 
 
